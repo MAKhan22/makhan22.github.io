@@ -1,0 +1,83 @@
+[
+  {
+    "id": "nvidia-cuda-python",
+    "title": "Fundamentals of Accelerated Computing with CUDA Python",
+    "issuer": "NVIDIA",
+    "year": 2025,
+    "link": "https://learn.nvidia.com/certificates?id=4KtenhtAR86bfh36BQTlhw",
+    "image": "https://via.placeholder.com/300x200?text=NVIDIA+CUDA+Python",
+    "platform": "NVIDIA"
+  },
+  {
+    "id": "nvidia-ai-predictive",
+    "title": "Applications of AI for Predictive Maintenance",
+    "issuer": "NVIDIA",
+    "year": 2025,
+    "link": "https://learn.nvidia.com/certificates?id=F1R2a3llQTaDe6OaCXGoiw",
+    "image": "https://via.placeholder.com/300x200?text=NVIDIA+AI+Predictive",
+    "platform": "NVIDIA"
+  },
+  {
+    "id": "nvidia-diffusion",
+    "title": "Generative AI with Diffusion Models",
+    "issuer": "NVIDIA",
+    "year": 2024,
+    "link": "https://learn.nvidia.com/certificates?id=CqUpmkn1SPOYnoGD89oQNQ",
+    "image": "https://via.placeholder.com/300x200?text=NVIDIA+Diffusion",
+    "platform": "NVIDIA"
+  },
+  {
+    "id": "nvidia-transformers",
+    "title": "Building Transformer-Based Natural Language Processing Applications",
+    "issuer": "NVIDIA",
+    "year": 2024,
+    "link": "https://learn.nvidia.com/certificates?id=CI_a_y8pSeGPMN3hrJY3kQ",
+    "image": "https://via.placeholder.com/300x200?text=NVIDIA+Transformers",
+    "platform": "NVIDIA"
+  },
+  {
+    "id": "nvidia-cuda-c",
+    "title": "Fundamentals of Accelerated Computing with CUDA C/C++",
+    "issuer": "NVIDIA",
+    "year": 2024,
+    "link": "https://learn.nvidia.com/certificates?id=YEZ0MVruS02_Cj1aOMasyA",
+    "image": "https://via.placeholder.com/300x200?text=NVIDIA+CUDA+C",
+    "platform": "NVIDIA"
+  },
+  {
+    "id": "google-troubleshooting",
+    "title": "Troubleshooting and Debugging Techniques",
+    "issuer": "Google",
+    "year": 2022,
+    "link": "https://coursera.org/verify/KKTDQS8JT5YY",
+    "image": "https://via.placeholder.com/300x200?text=Google+Debugging",
+    "platform": "Coursera"
+  },
+  {
+    "id": "ibm-python",
+    "title": "Data Analysis with Python",
+    "issuer": "IBM",
+    "year": 2022,
+    "link": "https://coursera.org/verify/2LWGU5ER4VYL",
+    "image": "https://via.placeholder.com/300x200?text=IBM+Python",
+    "platform": "Coursera"
+  },
+  {
+    "id": "harvard-cs50ai",
+    "title": "CS50's Introduction to Artificial Intelligence with Python",
+    "issuer": "HarvardX CS50AI",
+    "year": 2021,
+    "link": "https://courses.edx.org/certificates/765c8076e89f47dabd39e90ec32a614d",
+    "image": "https://via.placeholder.com/300x200?text=Harvard+CS50+AI",
+    "platform": "edX"
+  },
+  {
+    "id": "mit-computational-thinking",
+    "title": "Computational Thinking using Python",
+    "issuer": "MITx",
+    "year": 2021,
+    "link": "https://credentials.edx.org/credentials/d6a0a63949bb4aa08747f70275e3af18/",
+    "image": "https://via.placeholder.com/300x200?text=MITx+Python",
+    "platform": "edX"
+  }
+]

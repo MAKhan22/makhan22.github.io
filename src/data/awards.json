@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Sakıp Sabancı Incentive Scholarship",
+    "issuer": "Sabancı University",
+    "year": 2025,
+    "types": ["scholarship", "academic"],
+    "amount": "Full Tuition Waiver (100% Merit) - 2025-2026",
+    "description": "Awarded for outstanding academic achievement."
+  },
+  {
+    "title": "Sakıp Sabancı Incentive Scholarship",
+    "issuer": "Sabancı University",
+    "year": 2024,
+    "types": ["scholarship", "academic"],
+    "amount": "Full Tuition Waiver (100% Merit) - 2024-2025",
+    "description": "Awarded for outstanding academic achievement."
+  },
+  {
+    "title": "Türkiye Bursları Success Scholarship",
+    "issuer": "Türkiye Burslari Scholarships (YTB)",
+    "year": 2024,
+    "types": ["scholarship", "academic"],
+    "amount": "Monthly Stipend Award",
+    "description": "Awarded by the Government of Türkiye (YTB) to top-performing international students in recognition of exceptional academic achievement."
+  },
+  {
+    "title": "Sakıp Sabancı Incentive Scholarship",
+    "issuer": "Sabancı University",
+    "year": 2023,
+    "types": ["scholarship", "academic"],
+    "amount": "Full Tuition Waiver (100% Merit) - 2023-2024",
+    "description": "Awarded for outstanding academic achievement."
+  },
+  {
+    "title": "Student of the Year",
+    "issuer": "MECAPS",
+    "year": 2019,
+    "types": ["academic", "competition"],
+    "amount": "Senior Category Title",
+    "description": "Awarded for academic achievement and for ranking 1st in the MECAPS Talent Search competition (2019-2020)."
+  },
+  {
+    "title": "Dean's List - High Honors",
+    "issuer": "Sabancı University",
+    "year": 2025,
+    "types": ["academic"],
+    "amount": "Spring 2025",
+    "description": "Awarded for achieving top academic standing (CGPA 3.89/4.0) at Sabancı University."
+  },
+  {
+    "title": "Dean's List - High Honors",
+    "issuer": "Sabancı University",
+    "year": 2025,
+    "types": ["academic"],
+    "amount": "Fall 2025",
+    "description": "Awarded for achieving top academic standing (CGPA 3.89/4.0) at Sabancı University."
+  },
+  {
+    "title": "Dean's List - High Honors",
+    "issuer": "Sabancı University",
+    "year": 2024,
+    "types": ["academic"],
+    "amount": "Fall 2024",
+    "description": "Awarded for achieving top academic standing (CGPA 3.89/4.0) at Sabancı University."
+  },
+  {
+    "title": "Dean's List - High Honors",
+    "issuer": "Sabancı University",
+    "year": 2024,
+    "types": ["academic"],
+    "amount": "Spring 2024",
+    "description": "Awarded for achieving top academic standing (CGPA 3.89/4.0) at Sabancı University."
+  },
+  {
+    "title": "Dean's List - High Honors",
+    "issuer": "Sabancı University",
+    "year": 2023,
+    "types": ["academic"],
+    "amount": "Fall 2023",
+    "description": "Awarded for achieving top academic standing (CGPA 3.89/4.0) at Sabancı University."
+  },
+  {
+    "title": "Dean's List - High Honors",
+    "issuer": "Sabancı University",
+    "year": 2023,
+    "types": ["academic"],
+    "amount": "Spring 2023",
+    "description": "Awarded for achieving top academic standing (CGPA 3.89/4.0) at Sabancı University."
+  },
+  {
+    "title": "Dean's List - High Honors",
+    "issuer": "Sabancı University",
+    "year": 2022,
+    "types": ["academic"],
+    "amount": "Fall 2022",
+    "description": "Awarded for achieving top academic standing (CGPA 3.89/4.0) at Sabancı University."
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "id": "medical-image-segmentation",
+    "title": "Organ-Aware Multi-Stage Medical Image Segmentation (UNet++)",
+    "description": "Developed medical image segmentation CV models for lung pneumothorax (SIIM-ACR) and brain MRI FLAIR (LGG segmentation), achieving Dice 0.84 and 0.91 respectively. Implemented a lightweight routing classifier to dispatch images to these models automatically with perfect accuracy.",
+    "status": "in-progress",
+    "year": 2025,
+    "image": "https://via.placeholder.com/600x400?text=Medical+Image+Segmentation",
+    "links": {
+      "github": "https://github.com/orgs/CS415-MultiModal-Med-Image-Segmentation/repositories",
+      "demo": ""
+    },
+    "featured": true,
+    "tags": [
+      "Python",
+      "PyTorch",
+      "UNet++",
+      "EfficientNet",
+      "CNN",
+      "OpenCV",
+      "Machine Learning",
+      "Deep Learning",
+      "Computer Vision",
+      "Medical AI",
+      "Image Segmentation",
+      "Image Classification"
+    ]
+  },
+  {
+    "id": "semeval-2026-task5",
+    "title": "SemEval 2026 Task 5: AmbiStory Word Sense Plausibility",
+    "description": "Built a transformer-based NLP model for SemEval 2026 Task 5 to predict human plausibility ratings (1–5) for word senses in ambiguous narrative contexts. Achieved .73 combined score on the SemEval leaderboard using fine-tuned DeBERTa and novel dynamicly weighted hybrid CORAL + MSE loss.",
+    "status": "in-progress",
+    "year": 2025,
+    "image": "https://via.placeholder.com/600x400?text=SemEval+2026",
+    "links": {
+      "github": "https://github.com/NLP-445-SemEval/Private-Experiments-",
+      "demo": ""
+    },
+    "featured": true,
+    "tags": [
+      "Python",
+      "PyTorch",
+      "BERT",
+      "RoBERTa",
+      "DeBERTa",
+      "LLMs",
+      "Transformers",
+      "NLP",
+      "Competition",
+      "Deep Learning"
+    ]
+  },
+  {
+    "id": "graduation-ai-research-gap-finder",
+    "title": "Graduation Project: AI Research Gap Finder",
+    "description": "Developed an AI-powered end-to-end framework to automate Systematic Mapping Studies (SMS) using LLMs and Model Context Protocol (MCP) framework. Automates months-long SMS process of research paper retrieval, screening with snowballing, topic extraction and classification, and knowledge graph construction.",
+    "status": "completed",
+    "year": 2025,
+    "image": "https://via.placeholder.com/600x400?text=AI+Research+Gap+Finder",
+    "links": {
+      "github": "",
+      "demo": ""
+    },
+    "featured": true,
+    "tags": [
+      "Python",
+      "LLMs",
+      "MCP Framework",
+      "Graph Databases",
+      "Ollama",
+      "Research Automation",
+      "AI Agents",
+      "AI Assistant",
+      "NLP"
+    ]
+  },
+  {
+    "id": "portfolio-website",
+    "title": "Personal Portfolio Website",
+    "description": "Built a modern, professional portfolio website featuring dark mode, responsive design, and smooth animations. JSON-driven content architecture for easy maintenance, deployed on GitHub Pages with automated CI/CD pipeline.",
+    "status": "completed",
+    "year": 2026,
+    "image": "https://via.placeholder.com/600x400?text=Portfolio+Website",
+    "links": {
+      "github": "https://github.com/MAKhan22/ma-khan.github.io",
+      "demo": "https://ma-khan.github.io"
+    },
+    "featured": false,
+    "tags": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vite",
+      "Framer Motion",
+      "Web Development",
+      "Frontend",
+      "UI/UX"
+    ]
+  },
+  {
+    "id": "kenya-political-disorder",
+    "title": "Spatial Analysis of Political Disorder in Kenya (1997–2024)",
+    "description": "Analyzed 16,225 ACLED political violence and protest events (1997–2024) using spatial geometry and OpenStreetMap data. Demonstrated accessibility gradient in political disorder with riots concentrated near major roads and battles in remote regions.",
+    "status": "completed",
+    "year": 2025,
+    "image": "https://via.placeholder.com/600x400?text=Kenya+Political+Analysis",
+    "links": {
+      "github": "https://github.com/Spatial-Data-Science-494/Kenya-Political-Violence-2022",
+      "demo": ""
+    },
+    "featured": false,
+    "tags": [
+      "R",
+      "OpenStreetMap",
+      "ACLED",
+      "Spatial Data Science",
+      "Data Science",
+      "Political Analysis"
+    ]
+  },
+  {
+    "id": "github-network-analysis",
+    "title": "GitHub Developer Network Analysis",
+    "description": "Analyzed 1.9M GitHub users and 3.9M follower relationships using GPU-accelerated cuGraph and NetworkX. Investigated whether programming language diversity correlates with social network centrality using PageRank, betweenness, and community detection metrics.",
+    "status": "completed",
+    "year": 2025,
+    "image": "https://via.placeholder.com/600x400?text=GitHub+Network+Analysis",
+    "links": {
+      "github": "https://github.com/GraphVader/fictional-octo-waddle",
+      "demo": ""
+    },
+    "featured": false,
+    "tags": [
+      "Python",
+      "cuGraph",
+      "NetworkX",
+      "CUDA",
+      "Graph Analysis",
+      "Network Science",
+      "GPU Computing",
+      "Social Networks",
+      "Data Analysis"
+    ]
+  },
+  {
+    "id": "witchcraft-cv-tool",
+    "title": "WitchCraft: AI-Assisted CV Management Tool",
+    "description": "Created a CV-management tool that enables quick creation of professional, tailored, ATS-friendly CVs with AI assistance if needed.",
+    "status": "completed",
+    "year": 2025,
+    "image": "https://via.placeholder.com/600x400?text=WitchCraft+CV+Tool",
+    "links": {
+      "github": "https://github.com/ProjLab42/WitchCraft",
+      "demo": ""
+    },
+    "featured": false,
+    "tags": [
+      "TypeScript",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Express.js",
+      "Tailwind CSS",
+      "MongoDB",
+      "Vite",
+      "PDF Generation",
+      "Frontend",
+      "Backend",
+      "Full Stack",
+      "AI Assistant",
+      "Productivity Tool"
+    ]
+  },
+  {
+    "id": "howudoin-messaging-app",
+    "title": "HowUDoin: Mobile Messaging App",
+    "description": "Developed a Java messaging app using Gradle, Spring Boot and MongoDB for backend and React Native, Android Studio, Expo CLI for frontend.",
+    "status": "completed",
+    "year": 2024,
+    "image": "https://via.placeholder.com/600x400?text=HowUDoin+Messaging",
+    "links": {
+      "github": "https://github.com/MAKhan22/CS310_Howudoin",
+      "demo": ""
+    },
+    "featured": false,
+    "tags": [
+      "Java",
+      "Spring Boot",
+      "MongoDB",
+      "React Native",
+      "Android Studio",
+      "Mobile Development",
+      "Frontend",
+      "Backend",
+      "Full Stack",
+      "Real-time Messaging"
+    ]
+  },
+  {
+    "id": "stock-price-prediction",
+    "title": "Stock Price Prediction Using Linear Regression",
+    "description": "Created a model to predict Nvidia (NVDA) stock prices using trends from correlated stocks Microsoft (MSFT) and Broadcom (AVGO). Analyzed US stock market data (2019–2024) for market insights.",
+    "status": "completed",
+    "year": 2024,
+    "image": "https://via.placeholder.com/600x400?text=Stock+Prediction",
+    "links": {
+      "github": "",
+      "demo": ""
+    },
+    "featured": false,
+    "tags": [
+      "Python",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy",
+      "Linear Regression",
+      "Machine Learning",
+      "Finance",
+      "Data Analysis"
+    ]
+  },
+  {
+    "id": "ethnicity-cv-model",
+    "title": "Understanding Ethnicity Using Photographs",
+    "description": "Built an image classification CV model in my first year of CS to predict ethnicity from photographs using a dataset of individuals from the GCC, Egypt, and Levant regions.",
+    "status": "completed",
+    "year": 2023,
+    "image": "https://via.placeholder.com/600x400?text=Ethnicity+Classification",
+    "links": {
+      "github": "",
+      "demo": ""
+    },
+    "featured": false,
+    "tags": [
+      "Python",
+      "PyTorch",
+      "Keras",
+      "Computer Vision",
+      "CNN",
+      "Image Classification",
+      "Deep Learning"
+    ]
+  },
+  {
+    "id": "drone-network-simulation",
+    "title": "Effective Goggles: Drone Network Simulation",
+    "description": "Developed a distributed environmental monitoring simulation with networked sensors, intermediary drones, and a central server, implementing TCP-based communication, real-time statistical analysis and anomaly detection, battery lifecycle simulation with automatic recovery, and optional GUI-based system monitoring.",
+    "status": "completed",
+    "year": 2024,
+    "image": "https://via.placeholder.com/600x400?text=Drone+Network+Simulation",
+    "links": {
+      "github": "https://github.com/404NetFound/effective-goggles",
+      "demo": ""
+    },
+    "featured": false,
+    "tags": [
+      "Python",
+      "TCP/IP",
+      "Network Programming",
+      "GUI",
+      "Distributed Systems",
+      "Networking",
+      "Simulation",
+      "IoT"
+    ]
+  },
+  {
+    "id": "imdb-sentiment-analysis",
+    "title": "Sentiment Analysis of IMDB Movie Reviews",
+    "description": "Developed a comprehensive sentiment analysis pipeline for the IMDB movie review dataset (50K samples), implementing and evaluating Logistic Regression, BiLSTM with GloVe embeddings and attention, and fine-tuned BERT models, achieving up to 91.5% accuracy and 0.971 AUC, with systematic cross-validation and detailed performance–efficiency trade-off analysis.",
+    "status": "completed",
+    "year": 2024,
+    "image": "https://via.placeholder.com/600x400?text=IMDB+Sentiment+Analysis",
+    "links": {
+      "github": "https://github.com/abahmad02/CS412-Project",
+      "demo": ""
+    },
+    "featured": false,
+    "tags": [
+      "Python",
+      "PyTorch",
+      "BERT",
+      "BiLSTM",
+      "GloVe",
+      "Transformers",
+      "NLP",
+      "Deep Learning",
+      "Sentiment Analysis",
+      "Machine Learning"
+    ]
+  },
+  {
+    "id": "zad-a-dos-ecommerce",
+    "title": "Zad à Dos: E-commerce Web App",
+    "description": "Developed a full-stack e-commerce web application for men's luxury bags using MySQL, Node.js, Express.js, and React, following a client–server architecture and Scrum Agile methodology.",
+    "status": "completed",
+    "year": 2024,
+    "image": "https://via.placeholder.com/600x400?text=ZAD+A+DOS+Ecommerce",
+    "links": {
+      "github": "https://github.com/orgs/pishmish/repositories",
+      "demo": ""
+    },
+    "featured": false,
+    "tags": [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "JavaScript",
+      "Backend",
+      "Frontend",
+      "Full Stack",
+      "Web Development",
+      "E-commerce"
+    ]
+  },
+  {
+    "id": "database-system-sql-firebase",
+    "title": "Database System Using SQL and Firebase",
+    "description": "Implemented CRUD-based web applications integrating MySQL and Firebase, including the design of a relational database for a computer parts shop with ER modeling, SQL schema implementation, triggers and stored procedures, a web-based database interface, and a real-time customer support portal.",
+    "status": "completed",
+    "year": 2023,
+    "image": "https://via.placeholder.com/600x400?text=Database+System",
+    "links": {
+      "github": "",
+      "demo": ""
+    },
+    "featured": false,
+    "tags": [
+      "MySQL",
+      "Firebase",
+      "SQL",
+      "Database Design",
+      "Web Development",
+      "Database",
+      "Backend"
+    ]
+  },
+  {
+    "id": "fpga-air-hockey",
+    "title": "Electronic Air-Hockey Game on an FPGA",
+    "description": "Designed and implemented a two-player electronic air-hockey game on an FPGA using Verilog, modeling puck motion and game logic via finite state machines, with real-time interaction through LEDs, seven-segment displays, buttons, and switches; implemented timing control, debouncing, score tracking, win conditions, and demonstrated the complete system on hardware.",
+    "status": "completed",
+    "year": 2023,
+    "image": "https://via.placeholder.com/600x400?text=FPGA+Air+Hockey",
+    "links": {
+      "github": "https://github.com/FPGA-Air-Hockey/CS303_Electronic_Air_Hockey_Machine",
+      "demo": ""
+    },
+    "featured": false,
+    "tags": [
+      "Verilog",
+      "FPGA",
+      "Hardware Design",
+      "Digital Logic",
+      "Embedded Systems",
+      "Hardware",
+      "Digital Design"
+    ]
+  }
+]

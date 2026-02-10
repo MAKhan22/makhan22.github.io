@@ -1,0 +1,26 @@
+[
+  {
+    "id": "emco-part-time-2025",
+    "role": "Part-Time Full-Stack Software Developer",
+    "organization": "Eastern Al Maha Company (EMCO)",
+    "period": "Nov 2025 - Jan 2026",
+    "description": "Lead further refinement of the MACS 3 auditing system and delivered a more feature-rich, powerful and intuitive solution based on field deployment feedback. Collaborated in a 2-person team to enhance all 3 parts of the system to ensure long-term maintainability of the company's nationwide auditing infrastructure.",
+    "type": "work"
+  },
+  {
+    "id": "emco-intern-2025",
+    "role": "Software Developer Intern",
+    "organization": "Eastern Al Maha Company (EMCO)",
+    "period": "Jun 2025 - Aug 2025",
+    "description": "Developed MACS 3: a 3-component internal auditing system combining planogram compliance computer vision model, mobile task management app, and web-based admin dashboard. Improved compliance accuracy by 67% within 10 days, with 80% of non-compliance flags now originating from the mobile app. Implemented Backend using PostgreSQL + PostGIS, supporting location validation and automated database backup systems. Built and deployed Kubernetes microservices in Node.js/Express. Designed Frontend by integrating StoreService microservice into Flutter mobile app.",
+    "type": "internship"
+  },
+  {
+    "id": "sabanci-undergrad-research",
+    "role": "Undergraduate Student",
+    "organization": "Sabanci University",
+    "period": "Sep 2022 - Jun 2026",
+    "description": "• BSc in Computer Science and Engineering with 100% Merit Scholarship\n• CGPA: 3.89/4.0 (High Honors)\n• Key coursework: Data Science, Machine Learning, Deep Learning, AI, NLP, Network Science, Spatial Data Science\n• Active volunteer with TOM@University and SUBUH",
+    "type": "research"
+  }
+]

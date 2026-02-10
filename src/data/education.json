@@ -1,0 +1,54 @@
+[
+  {
+    "id": "sabanci-university",
+    "institution": "Sabancı University",
+    "degree": "B.Sc. Computer Science and Engineering",
+    "location": "Istanbul, Turkey",
+    "startDate": "Sep 2022",
+    "endDate": "Jun 2026",
+    "current": false,
+    "cgpa": "3.89/4.0",
+    "honors": "High Honors",
+    "scholarship": "100% Merit Scholarship (Sakip Sabanci)",
+    "rank": "29th among 702 engineering students",
+    "coursework": [
+      "Data Science",
+      "Spatial Data Science",
+      "Machine Learning",
+      "Deep Learning",
+      "Artificial Intelligence",
+      "Natural Language Processing",
+      "Network Science",
+      "Data Analytics and Optimization",
+      "Software Engineering",
+      "Mobile Application Development",
+      "Data Structures",
+      "Database Systems",
+      "Linear Algebra",
+      "Discrete Math",
+      "Probability",
+      "Statistics"
+    ],
+    "activities": [
+      "TOM@University Volunteer",
+      "SUBUH Super Active Club Member"
+    ]
+  },
+  {
+    "id": "bal-bhawan-school",
+    "institution": "Bal Bhawan School",
+    "degree": "High School",
+    "location": "Bhopal, India",
+    "startDate": "2019",
+    "endDate": "Jun 2021",
+    "current": false,
+    "grade": "90%",
+    "coursework": [
+      "Physics",
+      "Chemistry",
+      "Mathematics",
+      "Computer Science"
+    ],
+    "activities": []
+  }
+]
