@@ -2,7 +2,7 @@
 
 A modern, professional portfolio website built with React, TypeScript, and Tailwind CSS.
 
-## ✨ Features
+## Features
 
 - **Dark Mode**: Elegant theme toggle with smooth transitions
 - **JSON-Driven Content**: All content managed through JSON files - no code changes needed
@@ -12,7 +12,7 @@ A modern, professional portfolio website built with React, TypeScript, and Tailw
 - **SEO Optimized**: Proper meta tags and semantic HTML
 - **Zero Maintenance**: Update content by editing JSON files only
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Development
 
@@ -43,7 +43,7 @@ npm run preview
 npm run deploy
 ```
 
-## 📝 Content Management
+## Content Management
 
 All content is managed through JSON files in `src/data/`:
 
@@ -86,7 +86,7 @@ Edit `src/data/workshops.json`
 ### Add Certificates
 Edit `src/data/certificates.json`
 
-## 🎨 Customization
+## ustomization
 
 ### Colors
 Edit `tailwind.config.js` to change the color scheme:
@@ -103,7 +103,7 @@ colors: {
 ### Fonts
 Change the font in `index.html` (Google Fonts link) and `tailwind.config.js`.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 portfolio/
@@ -121,7 +121,7 @@ portfolio/
 └── README.md
 ```
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **React 18** - UI library
 - **TypeScript** - Type safety
@@ -131,7 +131,7 @@ portfolio/
 - **React Router** - Routing
 - **Lucide React** - Icons
 
-## 📦 Deployment
+## Deployment
 
 This portfolio is configured for GitHub Pages deployment:
 
@@ -139,14 +139,12 @@ This portfolio is configured for GitHub Pages deployment:
 2. Run `npm run deploy`
 3. Your site will be live at `https://<username>.github.io`
 
-## 📄 License
+## License
 
 MIT License - feel free to use this template for your own portfolio!
 
-## 🤝 Contributing
+.
+.
+.
 
-Found a bug or have a suggestion? Open an issue or submit a pull request!
-
----
-
-Built with ❤️ by Musab Ahmed Khan
+Your password is incorrect.
