@@ -12,7 +12,7 @@
     "role": "Software Developer Intern",
     "organization": "Eastern Al Maha Company (EMCO)",
     "period": "Jun 2025 - Aug 2025",
-    "description": "Developed MACS 3: a 3-component internal auditing system combining planogram compliance computer vision model, mobile task management app, and web-based admin dashboard. Improved compliance accuracy by 67% within 10 days, with 80% of non-compliance flags now originating from the mobile app. Implemented Backend using PostgreSQL + PostGIS, supporting location validation and automated database backup systems. Built and deployed Kubernetes microservices in Node.js/Express. Designed Frontend by integrating StoreService microservice into Flutter mobile app.",
+    "description": "Developed MACS 3: a 3-component internal auditing system combining planogram compliance computer vision model, mobile task management app, and web-based admin dashboard. Improved compliance accuracy by **67%** within 10 days, with **80%** of non-compliance flags now originating from the mobile app.",
     "type": "internship"
   },
   {

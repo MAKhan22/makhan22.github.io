@@ -221,8 +221,16 @@ GitHub: github.com/MAKhan22`
             </button>
           </div>
 
-          {/* Terminal Content */}
-          <div className={`flex-1 overflow-y-auto p-4 font-mono text-xs leading-relaxed ${isLoading || !isAuthenticated ? 'flex items-center justify-center' : ''}`} ref={terminalRef}>
+          {/* Terminal Content — click anywhere in main phase to focus command input */}
+          <div
+            className={`flex-1 overflow-y-auto p-4 font-mono text-xs leading-relaxed ${isLoading || !isAuthenticated ? 'flex items-center justify-center' : ''} ${isAuthenticated && !isLoading && gameState === 'none' ? 'cursor-text' : ''}`}
+            ref={terminalRef}
+            onClick={() => {
+              if (isAuthenticated && !isLoading && gameState === 'none') {
+                inputRef.current?.focus();
+              }
+            }}
+          >
             {isLoading ? (
               <LoadingScreen onComplete={finishLoading} />
             ) : !isAuthenticated ? (

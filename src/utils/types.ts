@@ -35,6 +35,26 @@ export interface Experience {
   type: 'research' | 'internship' | 'teaching' | 'work';
 }
 
+export interface Education {
+  id: string;
+  institution: string;
+  degree: string;
+  location: string;
+  startDate: string;
+  endDate: string;
+  current?: boolean;
+  cgpa?: string;
+  grade?: string;
+  honors?: string;
+  scholarship?: string;
+  rank?: string;
+  /** One-line summary (e.g. BSc with scholarship); shown as first content line when set */
+  summary?: string;
+  description?: string;
+  coursework?: string[];
+  activities?: string[];
+}
+
 export interface Certificate {
   id: string;
   title: string;

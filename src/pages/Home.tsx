@@ -6,13 +6,16 @@ import { Button } from '../components/ui/button';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
 import { ExperienceCard } from '../components/ExperienceCard';
+import { EducationCard } from '../components/EducationCard';
 import { useScrollFade } from '../hooks/useScrollFade';
 import profileData from '../data/profile.json';
 import experienceData from '../data/experience.json';
+import educationData from '../data/education.json';
 import projectsData from '../data/projects.json';
 import certificatesData from '../data/certificates.json';
 import awardsData from '../data/awards.json';
-import { Experience } from '../utils/types';
+import publicationsData from '../data/publications.json';
+import { Experience, Education } from '../utils/types';
 
 // Scroll fade wrapper component
 const ScrollFadeItem: React.FC<{ children: React.ReactNode; delay?: number }> = ({ children, delay = 0 }) => {
@@ -64,9 +67,12 @@ export const Home: React.FC = () => {
     },
   };
 
-  // Get featured projects and all experiences
+  // Get featured projects, experiences (work/internship/teaching only), and education
   const featuredProjects = projectsData.filter(p => p.featured).slice(0, 3);
-  const experiences = experienceData as Experience[];
+  const experiences = (experienceData as Experience[]).filter(
+    e => e.type === 'work' || e.type === 'internship' || e.type === 'teaching'
+  );
+  const education = educationData as Education[];
 
   return (
     <div className="w-full">
@@ -214,25 +220,25 @@ export const Home: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <ScrollFadeItem>
               <motion.div variants={fadeInUp} className="text-center">
-                <div className="text-4xl font-bold text-primary dark:text-blue-500 mb-2">9+</div>
+                <div className="text-4xl font-bold text-primary dark:text-blue-500 mb-2">{projectsData.length > 0 ? `${projectsData.length - 1}+` : '0'}</div>
                 <div className="text-sm text-muted-light dark:text-muted-dark">Projects</div>
               </motion.div>
             </ScrollFadeItem>
             <ScrollFadeItem>
               <motion.div variants={fadeInUp} className="text-center">
-                <div className="text-4xl font-bold text-primary dark:text-blue-500 mb-2">0</div>
+                <div className="text-4xl font-bold text-primary dark:text-blue-500 mb-2">{publicationsData.length}</div>
                 <div className="text-sm text-muted-light dark:text-muted-dark">Research Papers</div>
               </motion.div>
             </ScrollFadeItem>
             <ScrollFadeItem>
               <motion.div variants={fadeInUp} className="text-center">
-                <div className="text-4xl font-bold text-primary dark:text-blue-500 mb-2">9</div>
+                <div className="text-4xl font-bold text-primary dark:text-blue-500 mb-2">{certificatesData.length}</div>
                 <div className="text-sm text-muted-light dark:text-muted-dark">Certifications</div>
               </motion.div>
             </ScrollFadeItem>
             <ScrollFadeItem>
               <motion.div variants={fadeInUp} className="text-center">
-                <div className="text-4xl font-bold text-primary dark:text-blue-500 mb-2">12</div>
+                <div className="text-4xl font-bold text-primary dark:text-blue-500 mb-2">{awardsData.length}</div>
                 <div className="text-sm text-muted-light dark:text-muted-dark">Awards</div>
               </motion.div>
             </ScrollFadeItem>
@@ -240,8 +246,8 @@ export const Home: React.FC = () => {
         </motion.div>
       </section>
 
-      {/* Experience & Education Timeline Section */}
-      <section className="py-20 px-4 max-w-5xl mx-auto">
+      {/* Experience & Education — two columns */}
+      <section className="py-20 px-4 max-w-6xl mx-auto">
         <motion.div
           initial="hidden"
           whileInView="show"
@@ -265,14 +271,38 @@ export const Home: React.FC = () => {
             </motion.p>
           </ScrollFadeItem>
 
-          <div className="space-y-0 pl-10 relative">
-            {experiences.map((experience, index) => (
-              <ExperienceCard
-                key={experience.id}
-                experience={experience}
-                index={index}
-              />
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+            {/* Experience column */}
+            <div>
+              <h3 className="text-xl font-semibold text-text-light dark:text-text-dark mb-6">
+                Experience
+              </h3>
+              <div className="space-y-0 pl-10 relative">
+                {experiences.map((experience, index) => (
+                  <ExperienceCard
+                    key={experience.id}
+                    experience={experience}
+                    index={index}
+                  />
+                ))}
+              </div>
+            </div>
+
+            {/* Education column */}
+            <div>
+              <h3 className="text-xl font-semibold text-text-light dark:text-text-dark mb-6">
+                Education
+              </h3>
+              <div className="space-y-0 pl-10 relative">
+                {education.map((edu, index) => (
+                  <EducationCard
+                    key={edu.id}
+                    education={edu}
+                    index={index}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
         </motion.div>
       </section>
@@ -636,7 +666,7 @@ export const Home: React.FC = () => {
                 View my published papers and research work
               </p>
               <Badge variant="default" className="bg-primary/20 dark:bg-blue-600/20 text-primary dark:text-blue-400 border-primary/30 dark:border-blue-500/30">
-                0 papers
+                {publicationsData.length} {publicationsData.length === 1 ? 'paper' : 'papers'}
               </Badge>
             </motion.button>
             </ScrollFadeItem>

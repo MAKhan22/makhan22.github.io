@@ -52,20 +52,24 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience, inde
           {experience.organization}
         </p>
         <div className="text-muted-light dark:text-muted-dark">
-          {experience.description.split('\n').map((line, idx) => {
-            // Parse **text** as bold
-            const parts = line.split(/(\*\*.*?\*\*)/g);
-            return (
-              <p key={idx} className="leading-relaxed">
-                {parts.map((part, i) => {
-                  if (part.startsWith('**') && part.endsWith('**')) {
-                    return <strong key={i} className="font-semibold text-text-light dark:text-text-dark">{part.slice(2, -2)}</strong>;
-                  }
-                  return <span key={i}>{part}</span>;
-                })}
-              </p>
-            );
-          })}
+          {experience.description
+            .split('\n')
+            .flatMap((line) =>
+              line.split(/(?<=\.)\s+/).map((s) => s.trim()).filter(Boolean)
+            )
+            .map((sentence, idx) => {
+              const parts = sentence.split(/(\*\*.*?\*\*)/g);
+              return (
+                <p key={idx} className="leading-relaxed">
+                  {parts.map((part, i) => {
+                    if (part.startsWith('**') && part.endsWith('**')) {
+                      return <strong key={i} className="font-semibold text-text-light dark:text-text-dark">{part.slice(2, -2)}</strong>;
+                    }
+                    return <span key={i}>{part}</span>;
+                  })}
+                </p>
+              );
+            })}
         </div>
       </div>
     </motion.div>
