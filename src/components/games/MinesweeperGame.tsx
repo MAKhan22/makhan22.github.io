@@ -234,7 +234,7 @@ export const MinesweeperGame: React.FC<MinesweeperGameProps> = ({ onExit }) => {
                       ? isMine
                         ? isTriggered
                           ? 'bg-red-500 text-white'
-                          : 'bg-zinc-800 dark:bg-zinc-950 text-zinc-200'
+                          : 'bg-zinc-400 dark:bg-zinc-900 text-zinc-100'
                         : 'bg-zinc-300 dark:bg-zinc-600 text-zinc-900 dark:text-zinc-100'
                       : flag
                         ? 'bg-amber-400 dark:bg-amber-600 text-zinc-900'
