@@ -141,10 +141,13 @@ This portfolio is configured for GitHub Pages deployment:
 
 ## License
 
-MIT License - feel free to use this template for your own portfolio!
+MIT License
+
+
 
 .
 .
 .
+
 
 Your password is incorrect.
