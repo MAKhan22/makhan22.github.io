@@ -114,7 +114,7 @@ export const Navbar: React.FC = () => {
           <Link 
             to="/" 
             onClick={handleHomeClick}
-            className="group ml-16"
+            className="group ml-6"
           >
             <span className="text-xl font-bold text-text-light dark:text-text-dark group-hover:text-primary dark:group-hover:text-primary-dark transition-colors duration-200 whitespace-nowrap inline-flex items-baseline">
               <span>M</span>
