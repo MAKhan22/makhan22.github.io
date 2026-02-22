@@ -163,6 +163,72 @@ GitHub: github.com/MAKhan22`
       case '':
         break;
 
+      case 'sudo':
+        setHistory(prev => [...prev, {
+          type: 'output',
+          content: 'This is a portfolio, not a real shell — no root here. Try "help" for what actually works.'
+        }]);
+        break;
+      case 'ls':
+        setHistory(prev => [...prev, {
+          type: 'output',
+          content: 'Nice try. The only listing you get is "help".'
+        }]);
+        break;
+      case 'pwd':
+        setHistory(prev => [...prev, {
+          type: 'output',
+          content: 'You are here: ~/portfolio/terminal. (Not really, type "help".)'
+        }]);
+        break;
+      case 'cd':
+        setHistory(prev => [...prev, {
+          type: 'output',
+          content: 'No directory navigation in this terminal. Stay a while — try "snake" or "minesweeper".'
+        }]);
+        break;
+      case 'cat':
+        setHistory(prev => [...prev, {
+          type: 'output',
+          content: 'No files to cat. This is a browser, not /etc. Type "help" to see what\'s available.'
+        }]);
+        break;
+      case 'grep':
+        setHistory(prev => [...prev, {
+          type: 'output',
+          content: 'Nothing to grep, no filesystem here. Try "help" instead.'
+        }]);
+        break;
+      case 'mkdir':
+      case 'touch':
+      case 'rm':
+      case 'rmdir':
+        setHistory(prev => [...prev, {
+          type: 'output',
+          content: 'File system is read-only in this terminal. (It\'s a website.) Type "help".'
+        }]);
+        break;
+      case 'nano':
+      case 'vim':
+      case 'vi':
+        setHistory(prev => [...prev, {
+          type: 'output',
+          content: 'No editors here — you\'re in a browser. Type "help" for real commands.'
+        }]);
+        break;
+      case 'man':
+        setHistory(prev => [...prev, {
+          type: 'output',
+          content: 'No man pages. The only manual is "help".'
+        }]);
+        break;
+      case 'whoami':
+        setHistory(prev => [...prev, {
+          type: 'output',
+          content: 'You\'re a visitor. I\'m Musab\'s portfolio terminal. Type "about" to learn more.'
+        }]);
+        break;
+
       default:
         setHistory(prev => [...prev, {
           type: 'error',
