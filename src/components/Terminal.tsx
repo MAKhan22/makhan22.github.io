@@ -166,7 +166,7 @@ GitHub: github.com/MAKhan22`
       case 'sudo':
         setHistory(prev => [...prev, {
           type: 'output',
-          content: 'This is a portfolio, not a real shell — no root here. Try "help" for what actually works.'
+          content: 'Nice try — you cannot override permissions here. Type "help" for available commands.'
         }]);
         break;
       case 'ls':
