@@ -55,6 +55,22 @@ export const Awards: React.FC = () => {
     }
   };
 
+  const getAwardTagBorderColor = (type: string) => {
+    switch (type) {
+      case 'academic':
+        return '!border-blue-600/70 dark:!border-blue-400/60';
+      case 'scholarship':
+      case 'grant':
+        return '!border-green-600/70 dark:!border-green-400/60';
+      case 'research':
+        return '!border-purple-600/70 dark:!border-purple-400/60';
+      case 'competition':
+        return '!border-yellow-600/70 dark:!border-yellow-400/60';
+      default:
+        return '!border-zinc-500/60 dark:!border-zinc-400/50';
+    }
+  };
+
   const getAwardTypes = (award: Award) => award.types ?? [];
 
   // Group by year
@@ -140,7 +156,7 @@ export const Awards: React.FC = () => {
                           )}
                           <div className="flex items-center gap-2 flex-wrap">
                             {types.map((t) => (
-                              <Badge key={t} variant="secondary" className="capitalize">
+                              <Badge key={t} variant="secondary" className={`capitalize border ${getAwardTagBorderColor(t)}`}>
                                 {t}
                               </Badge>
                             ))}
