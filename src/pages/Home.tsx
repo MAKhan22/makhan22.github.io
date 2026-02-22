@@ -175,7 +175,7 @@ export const Home: React.FC = () => {
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => window.open('/cv/Musab_Ahmed_Khan_CV.pdf', '_blank')}
+              onClick={() => window.open('/cv/Musab_Ahmed_Khan_Professional_CV.pdf', '_blank')}
               className="w-14 h-14 rounded-full bg-primary dark:bg-blue-600 hover:bg-primary/90 dark:hover:bg-blue-500 border border-primary dark:border-blue-500 flex items-center justify-center transition-all shadow-md hover:shadow-lg shadow-primary/20 dark:shadow-blue-500/20"
               aria-label="Download CV"
             >
