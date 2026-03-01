@@ -19,9 +19,7 @@ export const Terminal: React.FC<TerminalProps> = ({ isOpen, onClose }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [passwordInput, setPasswordInput] = useState('');
   const [passwordError, setPasswordError] = useState(false);
-  const [history, setHistory] = useState<Array<{ type: 'command' | 'output' | 'error'; content: string }>>([
-    { type: 'output', content: 'Welcome to the terminal! Type "help" for available commands.' }
-  ]);
+  const [history, setHistory] = useState<Array<{ type: 'command' | 'output' | 'error'; content: string }>>([]);
   const [input, setInput] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
   const passwordInputRef = useRef<HTMLInputElement>(null);
