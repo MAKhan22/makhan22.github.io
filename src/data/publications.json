@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "title": "SU NLP 29 at SemEval-2026 Task 5: DynaOrd - Hybrid Dynamic Ordinal Regression with LoRA-Fine-Tuned DeBERTa-v3",
+    "authors": ["Musab Ahmed Khan"],
+    "venue": "SemEval-2026",
+    "year": 2026,
+    "type": "conference",
+    "status": "under-review",
+    "abstract": "Under review at SemEval 2026 (co-located with ACL 2026)."
+  }
+]

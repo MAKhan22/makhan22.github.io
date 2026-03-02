@@ -198,10 +198,10 @@ export const Navbar: React.FC = () => {
             {/* Terminal Toggle (to the right of theme) */}
             <button
               onClick={() => setIsTerminalOpen(!isTerminalOpen)}
-              className="p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-zinc-900"
+              className="p-2 rounded-lg hover:bg-primary/10 dark:hover:bg-blue-500/10 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-zinc-900"
               aria-label="Toggle terminal"
             >
-              <Terminal className={`w-5 h-5 ${isTerminalOpen ? 'text-primary dark:text-primary-dark' : 'text-muted-light dark:text-muted-dark'}`} />
+              <Terminal className="w-5 h-5 text-primary dark:text-primary-dark" />
             </button>
           </div>
         </div>
