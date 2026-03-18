@@ -7,5 +7,15 @@
     "type": "conference",
     "status": "under-review",
     "abstract": "Under review at SemEval 2026 (co-located with ACL 2026)."
+  },
+
+  {
+    "title": "Anatomy-Aware Routing for Robust Medical Image Segmentation: A Failure-Detectable Alternative to Mixed Models",
+    "authors": ["Musab Ahmed Khan", "Mohammed Sateh Salem"],
+    "venue": "IEEE SIU 2026",
+    "year": 2026,
+    "type": "conference",
+    "status": "under-review",
+    "abstract": "Under review at IEEE SIU 2026."
   }
 ]
