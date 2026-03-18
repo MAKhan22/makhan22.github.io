@@ -42,10 +42,18 @@
   {
     "title": "Dean's List - High Honors",
     "issuer": "Sabancı University",
+    "year": 2026,
+    "types": ["academic"],
+    "amount": "Fall 2026",
+    "description": "Awarded for achieving top academic standing at Sabancı University."
+  },
+  {
+    "title": "Dean's List - High Honors",
+    "issuer": "Sabancı University",
     "year": 2025,
     "types": ["academic"],
     "amount": "Spring 2025",
-    "description": "Awarded for achieving top academic standing (CGPA 3.89/4.0) at Sabancı University."
+    "description": "Awarded for achieving top academic standing at Sabancı University."
   },
   {
     "title": "Dean's List - High Honors",
@@ -53,7 +61,7 @@
     "year": 2025,
     "types": ["academic"],
     "amount": "Fall 2025",
-    "description": "Awarded for achieving top academic standing (CGPA 3.89/4.0) at Sabancı University."
+    "description": "Awarded for achieving top academic standing at Sabancı University."
   },
   {
     "title": "Dean's List - High Honors",
@@ -61,7 +69,7 @@
     "year": 2024,
     "types": ["academic"],
     "amount": "Fall 2024",
-    "description": "Awarded for achieving top academic standing (CGPA 3.89/4.0) at Sabancı University."
+    "description": "Awarded for achieving top academic standing at Sabancı University."
   },
   {
     "title": "Dean's List - High Honors",
@@ -69,7 +77,7 @@
     "year": 2024,
     "types": ["academic"],
     "amount": "Spring 2024",
-    "description": "Awarded for achieving top academic standing (CGPA 3.89/4.0) at Sabancı University."
+    "description": "Awarded for achieving top academic standing at Sabancı University."
   },
   {
     "title": "Dean's List - High Honors",
@@ -77,7 +85,7 @@
     "year": 2023,
     "types": ["academic"],
     "amount": "Fall 2023",
-    "description": "Awarded for achieving top academic standing (CGPA 3.89/4.0) at Sabancı University."
+    "description": "Awarded for achieving top academic standing at Sabancı University."
   },
   {
     "title": "Dean's List - High Honors",
@@ -85,7 +93,7 @@
     "year": 2023,
     "types": ["academic"],
     "amount": "Spring 2023",
-    "description": "Awarded for achieving top academic standing (CGPA 3.89/4.0) at Sabancı University."
+    "description": "Awarded for achieving top academic standing at Sabancı University."
   },
   {
     "title": "Dean's List - High Honors",
@@ -93,6 +101,6 @@
     "year": 2022,
     "types": ["academic"],
     "amount": "Fall 2022",
-    "description": "Awarded for achieving top academic standing (CGPA 3.89/4.0) at Sabancı University."
+    "description": "Awarded for achieving top academic standing at Sabancı University."
   }
 ]
