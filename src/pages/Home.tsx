@@ -179,7 +179,25 @@ export const Home: React.FC = () => {
               className="w-14 h-14 rounded-full bg-primary dark:bg-blue-600 hover:bg-primary/90 dark:hover:bg-blue-500 border border-primary dark:border-blue-500 flex items-center justify-center transition-all shadow-md hover:shadow-lg shadow-primary/20 dark:shadow-blue-500/20"
               aria-label="Download CV"
             >
-              <span className="text-white font-semibold text-sm">CV</span>
+              <span className="text-white font-semibold text-[10px] text-center leading-tight">
+                Prof.
+                <br />
+                CV
+              </span>
+            </motion.button>
+
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => window.open('/cv/Musab_Ahmed_Khan_Academic_CV.pdf', '_blank')}
+              className="w-14 h-14 rounded-full bg-primary/90 dark:bg-blue-600 hover:bg-primary dark:hover:bg-blue-500 border border-primary dark:border-blue-500 flex items-center justify-center transition-all shadow-md hover:shadow-lg shadow-primary/20 dark:shadow-blue-500/20"
+              aria-label="Download Academic CV"
+            >
+              <span className="text-white font-semibold text-[10px] text-center leading-tight">
+                Acad.
+                <br />
+                CV
+              </span>
             </motion.button>
           </motion.div>
 
@@ -373,7 +391,7 @@ export const Home: React.FC = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
-                    {['PyTorch', 'TensorFlow', 'Pandas', 'NumPy', 'Scikit-learn', 'NetworkX', 'cuGraph',  'Transformers', 'AI Agents', 'LLMs', 'NLP', 'Computer Vision', 'Deep Learning', 'BERT', 'DeBERTa'].map(skill => (
+                    {['PyTorch', 'Pandas', 'NumPy', 'Scikit-learn', 'NetworkX', 'cuGraph',  'Transformers', 'AI Agents', 'LLMs', 'NLP', 'Computer Vision', 'Deep Learning'].map(skill => (
                       <Badge key={skill} variant="secondary">{skill}</Badge>
                     ))}
                   </div>
