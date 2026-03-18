@@ -1,7 +1,31 @@
 [
   {
+    "id": "deepmyelinai-cdss",
+    "title": "Teknofest 2026 - AI in Healthcare: DeepMyelinAI - MS Clinical Decision Support System",
+    "description": "Developing an Explainable-AI based Clinical Decision Support System (CDSS) for Teknofest 2026 for early diagnosis, disease subtype classification, progression prediction, and relapse prediction in Multiple Sclerosis (MS) using CSF biomarkers, clinical disability scores, genetic risk profiles, longitudinal symptom histories, and demographic data. Designing a multi-stage ML framework targeting the four clinical objectives, employing specialized model types at different stages while ensuring complete transparency for clinical use with xAI methods like SHAP, LIME, and attention visualization.",
+    "status": "in-progress",
+    "year": 2026,
+    "image": "https://via.placeholder.com/600x400?text=DeepMyelinAI+CDSS",
+    "links": {
+      "github": "",
+      "demo": ""
+    },
+    "featured": true,
+    "tags": [
+      "Python",
+      "Machine Learning",
+      "Deep Learning",
+      "Explainable AI",
+      "SHAP",
+      "LIME",
+      "Clinical Decision Support System",
+      "Healthcare AI",
+      "Competition"
+    ]
+  },
+  {
     "id": "medical-image-segmentation",
-    "title": "Organ-Aware Multi-Stage Medical Image Segmentation (UNet++)",
+    "title": "Anatomy-Aware Multi-Stage Medical Image Segmentation",
     "description": "Developed medical image segmentation CV models for lung pneumothorax (SIIM-ACR) and brain MRI FLAIR (LGG segmentation), achieving Dice 0.84 and 0.91 respectively. Implemented a lightweight routing classifier to dispatch images to these models automatically with perfect accuracy.",
     "status": "in-progress",
     "year": 2025,
@@ -21,7 +45,7 @@
       "Machine Learning",
       "Deep Learning",
       "Computer Vision",
-      "Medical AI",
+      "Healthcare AI",
       "Image Segmentation",
       "Image Classification"
     ]

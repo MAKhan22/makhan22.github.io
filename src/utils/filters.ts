@@ -22,7 +22,9 @@ export const getTagCount = (projects: Project[], tag: string): number => {
 };
 
 // Categorize tags for color coding
-export const getTagCategory = (tag: string): 'language' | 'tech-stack' | 'libraries' | 'cs-field' | 'other' => {
+export const getTagCategory = (
+  tag: string
+): 'language' | 'tech-stack' | 'libraries' | 'cs-field' | 'events' | 'other' => {
   const programmingLanguages = [
     'Python', 'JavaScript', 'TypeScript', 'Java', 'C', 'C++', 'R', 'Bash', 
     'Verilog', 'SQL', 'HTML', 'CSS', 'Swift', 'Kotlin', 'Go', 'Rust', 'PHP'
@@ -51,16 +53,28 @@ export const getTagCategory = (tag: string): 'language' | 'tech-stack' | 'librar
   ];
   
   const csFields = [
-    'Deep Learning', 'Machine Learning', 'NLP', 'Computer Vision', 
+    'Deep Learning', 'Machine Learning', 'NLP', 'Computer Vision',
     'Network Science', 'Data Science', 'Spatial Analysis', 'Spatial Data Science',
-    'Medical AI', 'Sentiment Analysis', 'Data Analysis',
+    'Healthcare AI', 'Sentiment Analysis', 'Data Analysis',
     'Web Development', 'Mobile Development'
+  ];
+
+  // Events / competitions / external programs
+  const events = [
+    'Competition',
+    'Hackathon',
+    'Olympiad',
+    'Contest',
+    'Challenge',
+    'Tournament',
+    'Event',
   ];
   
   if (programmingLanguages.includes(tag)) return 'language';
   if (techStack.includes(tag)) return 'tech-stack';
   if (libraries.includes(tag)) return 'libraries';
   if (csFields.includes(tag)) return 'cs-field';
+  if (events.includes(tag)) return 'events';
   return 'other';
 };
 
@@ -71,39 +85,49 @@ export const getTagBorderColor = (tag: string): string => {
     'tech-stack': '!border-purple-600/80 dark:!border-purple-400/75',
     'libraries': '!border-yellow-600/80 dark:!border-yellow-400/75',
     'cs-field': '!border-green-600/80 dark:!border-green-400/75',
+    'events': '!border-white dark:!border-white',
     'other': '!border-red-600/80 dark:!border-red-400/75'
   };
   return colors[category];
 };
 
-export const getCategoryColor = (category: 'language' | 'tech-stack' | 'libraries' | 'cs-field' | 'other'): string => {
+export const getCategoryColor = (
+  category: 'language' | 'tech-stack' | 'libraries' | 'cs-field' | 'events' | 'other'
+): string => {
   const colors = {
     'language': 'text-blue-600/80 dark:text-blue-400/75 border-blue-600/75 dark:border-blue-400/70',
     'tech-stack': 'text-purple-600/80 dark:text-purple-400/75 border-purple-600/75 dark:border-purple-400/70',
     'libraries': 'text-yellow-600/80 dark:text-yellow-400/75 border-yellow-600/75 dark:border-yellow-400/70',
     'cs-field': 'text-green-600/80 dark:text-green-400/75 border-green-600/75 dark:border-green-400/70',
+    'events': 'text-white dark:text-white border-white dark:border-white',
     'other': 'text-red-600/80 dark:text-red-400/75 border-red-600/75 dark:border-red-400/70'
   };
   return colors[category];
 };
 
-export const getCategoryLabel = (category: 'language' | 'tech-stack' | 'libraries' | 'cs-field' | 'other'): string => {
+export const getCategoryLabel = (
+  category: 'language' | 'tech-stack' | 'libraries' | 'cs-field' | 'events' | 'other'
+): string => {
   const labels = {
     'language': 'Programming Languages',
     'tech-stack': 'Tech Stack',
     'libraries': 'Libraries',
     'cs-field': 'CS Fields',
+    'events': 'Events & Competitions',
     'other': 'Other'
   };
   return labels[category];
 };
 
-export const groupTagsByCategory = (tags: string[]): Record<'language' | 'tech-stack' | 'libraries' | 'cs-field' | 'other', string[]> => {
-  const grouped: Record<'language' | 'tech-stack' | 'libraries' | 'cs-field' | 'other', string[]> = {
+export const groupTagsByCategory = (
+  tags: string[]
+): Record<'language' | 'tech-stack' | 'libraries' | 'cs-field' | 'events' | 'other', string[]> => {
+  const grouped: Record<'language' | 'tech-stack' | 'libraries' | 'cs-field' | 'events' | 'other', string[]> = {
     'language': [],
     'tech-stack': [],
     'libraries': [],
     'cs-field': [],
+    'events': [],
     'other': []
   };
   

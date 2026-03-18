@@ -21,11 +21,12 @@ export const TagFilter: React.FC<TagFilterProps> = ({
 }) => {
   const groupedTags = useMemo(() => groupTagsByCategory(tags), [tags]);
   
-  const categoryOrder: Array<'language' | 'tech-stack' | 'libraries' | 'cs-field' | 'other'> = [
+  const categoryOrder: Array<'language' | 'tech-stack' | 'libraries' | 'cs-field' | 'events' | 'other'> = [
     'language',
     'tech-stack',
     'libraries',
     'cs-field',
+    'events',
     'other'
   ];
 
