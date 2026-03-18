@@ -62,6 +62,8 @@ export const getTagCategory = (
   // Events / competitions / external programs
   const events = [
     'Competition',
+    'Publication',
+    'Paper',
     'Hackathon',
     'Olympiad',
     'Contest',

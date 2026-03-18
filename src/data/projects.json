@@ -47,7 +47,8 @@
       "Computer Vision",
       "Healthcare AI",
       "Image Segmentation",
-      "Image Classification"
+      "Image Classification",
+      "Publication"
     ]
   },
   {
@@ -72,6 +73,7 @@
       "Transformers",
       "NLP",
       "Competition",
+      "Publication",
       "Deep Learning"
     ]
   },
