@@ -26,7 +26,7 @@
   {
     "id": "medical-image-segmentation",
     "title": "Anatomy-Aware Multi-Stage Medical Image Segmentation",
-    "description": "Developed medical image segmentation CV models for lung pneumothorax (SIIM-ACR) and brain MRI FLAIR (LGG segmentation), achieving Dice 0.84 and 0.91 respectively. Implemented a lightweight routing classifier to dispatch images to these models automatically with perfect accuracy.",
+    "description": "Developed medical image segmentation CV models for lung pneumothorax (SIIM-ACR) and brain MRI FLAIR (LGG segmentation), achieving Dice 0.84 and 0.91 respectively. Implemented a lightweight routing classifier to dispatch images to these models automatically with perfect accuracy. Extended pipeline to include modular post-training reliability flagging mechanism combining MC Dropout uncertainty, domain-shift detection and morphological plausibility checks and compared performance and robustness against heterogeneous mixed model approaches.",
     "status": "in-progress",
     "year": 2025,
     "image": "https://via.placeholder.com/600x400?text=Medical+Image+Segmentation",
