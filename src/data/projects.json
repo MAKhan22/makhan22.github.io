@@ -24,6 +24,79 @@
     ]
   },
   {
+    "id": "turkish-vocabulary-recommender",
+    "title": "The Right Word at the Right Time: Adaptive Turkish Vocabulary Recommender",
+    "description": "Built a terminal-based Turkish vocabulary recommender for learners using FAISS, multilingual bi-encoder retrieval, and a weighted feature reranker (semantic fit, corpus frequency, morphological overlap, MMR diversity, difficulty penalty), with optional cross-encoder and OpenRouter LLM tutor to suggest next words from a known-word learner profile. Best configuration (mpnet + mean embedding + weighted features) achieved a combined score of 0.671 (+12.3% over bi-encoder-only baseline).",
+    "status": "completed",
+    "year": 2026,
+    "image": "https://via.placeholder.com/600x400?text=Turkish+Vocabulary+Recommender",
+    "links": {
+      "github": "https://github.com/MAKhan22/symmetrical-broccoli",
+      "demo": ""
+    },
+    "featured": false,
+    "tags": [
+      "Python",
+      "FAISS",
+      "NLP",
+      "Embeddings",
+      "Information Retrieval",
+      "Cross-Encoder",
+      "LLMs",
+      "Turkish",
+      "Machine Learning", 
+      "Recommendation Systems"
+    ]
+  },
+  {
+    "id": "tracelens-ui-test-debugging",
+    "title": "TraceLens: Multimodal Relative Debugging of Failed UI Test Executions",
+    "description": "Developed an automated debugging pipeline that compares pass/fail UI test traces (actions, logs, screenshots) to rank steps most likely causing a regression and generate technical and plain-language root-cause reports. Combined heuristic (text, pixel diff, visual causal), LLM, and VLM scores in a unified fusion architecture, achieving 81% Hit@1 (+28% over heuristic baseline).",
+    "status": "completed",
+    "year": 2026,
+    "image": "https://via.placeholder.com/600x400?text=TraceLens",
+    "links": {
+      "github": "https://github.com/MAKhan22/TraceLens-Automated-Debugging",
+      "demo": ""
+    },
+    "featured": false,
+    "tags": [
+      "Python",
+      "LLMs",
+      "VLM",
+      "Multimodal",
+      "UI Testing",
+      "Computer Vision",
+      "NLP",
+      "Debugging",
+      "Machine Learning",
+      "Software Engineering",
+      "Automated Debugging",
+      "Relative Debugging"
+    ]
+  },
+  {
+    "id": "subset-sum-bruteforce-vs-heuristic",
+    "title": "Subset Sum: Brute Force vs FPTAS Heuristic",
+    "description": "Implemented and compared brute-force and FPTAS solvers for the NP-complete Subset Sum problem, validating exponential vs polynomial runtime experimentally up to n = 300. Built a reproducible instance generator; all FPTAS outputs satisfied the (1 + ε) approximation guarantee with a max gap of 2 from optimal.",
+    "status": "completed",
+    "year": 2026,
+    "image": "https://via.placeholder.com/600x400?text=Subset+Sum",
+    "links": {
+      "github": "https://github.com/CS301-Algorithms/subset-sum-bruteforce-vs-heuristic",
+      "demo": ""
+    },
+    "featured": false,
+    "tags": [
+      "Python",
+      "Algorithms",
+      "NP-Completeness",
+      "FPTAS",
+      "Approximation Algorithms",
+      "Complexity Theory"
+    ]
+  },
+  {
     "id": "medical-image-segmentation",
     "title": "Anatomy-Aware Multi-Stage Medical Image Segmentation",
     "description": "Developed medical image segmentation CV models for lung pneumothorax (SIIM-ACR) and brain MRI FLAIR (LGG segmentation), achieving Dice 0.84 and 0.91 respectively. Implemented a lightweight routing classifier to dispatch images to these models automatically with perfect accuracy. Extended pipeline to include modular post-training reliability flagging mechanism combining MC Dropout uncertainty, domain-shift detection and morphological plausibility checks and compared performance and robustness against heterogeneous mixed model approaches.",
@@ -54,7 +127,7 @@
   {
     "id": "semeval-2026-task5",
     "title": "SemEval 2026 Task 5: AmbiStory Word Sense Plausibility",
-    "description": "Built a transformer-based NLP model for SemEval 2026 Task 5 to predict human plausibility ratings (1–5) for word senses in ambiguous narrative contexts. Achieved .73 combined score on the SemEval leaderboard using fine-tuned DeBERTa and novel dynamicly weighted hybrid CORAL + MSE loss.",
+    "description": "Built a transformer-based NLP model for SemEval 2026 Task 5 to predict human plausibility ratings (1–5) for word senses in ambiguous narrative contexts. Achieved .73 combined score and ranked 14th on the SemEval leaderboard using fine-tuned DeBERTa and novel dynamicly weighted hybrid CORAL + MSE loss. Future plans include using LLMs to generate augmented datasets in Ambistory’s style to improve generalization.",
     "status": "completed",
     "year": 2025,
     "image": "https://via.placeholder.com/600x400?text=SemEval+2026",

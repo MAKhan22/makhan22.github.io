@@ -56,7 +56,8 @@ export const getTagCategory = (
     'Deep Learning', 'Machine Learning', 'NLP', 'Computer Vision',
     'Network Science', 'Data Science', 'Spatial Analysis', 'Spatial Data Science',
     'Healthcare AI', 'Sentiment Analysis', 'Data Analysis',
-    'Web Development', 'Mobile Development'
+    'Web Development', 'Mobile Development', 'Software Engineering',
+    'Automated Debugging'
   ];
 
   // Events / competitions / external programs
