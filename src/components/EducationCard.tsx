@@ -9,7 +9,9 @@ interface EducationCardProps {
 }
 
 export const EducationCard: React.FC<EducationCardProps> = ({ education, index }) => {
-  const period = `${education.startDate} – ${education.endDate}${education.current ? ' (current)' : ''}`;
+  const period = `${education.startDate} – ${education.endDate}${
+    education.duration ? ` (${education.duration})` : ''
+  }${education.current ? ' (current)' : ''}`;
 
   return (
     <motion.div
@@ -48,6 +50,26 @@ export const EducationCard: React.FC<EducationCardProps> = ({ education, index }
         <div className="text-sm text-muted-light dark:text-muted-dark space-y-1.5">
           {education.summary && (
             <p className="leading-relaxed">{education.summary}</p>
+          )}
+          {education.highlights && education.highlights.length > 0 && (
+            <ul className="list-disc pl-5 space-y-0.5">
+              {education.highlights.map((item) => (
+                <li key={item.label} className="text-xs leading-relaxed">
+                  {item.url ? (
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary dark:text-primary-dark hover:underline"
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    item.label
+                  )}
+                </li>
+              ))}
+            </ul>
           )}
           {(education.cgpa || education.grade) && (
             <p className="font-medium text-text-light dark:text-text-dark">

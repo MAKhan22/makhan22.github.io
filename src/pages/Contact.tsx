@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Github, Linkedin } from 'lucide-react';
+import { GoogleScholarIcon, OrcidIcon } from '../components/icons/SocialIcons';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import profileData from '../data/profile.json';
@@ -46,6 +47,22 @@ export const Contact: React.FC = () => {
       value: 'musab-ahmed-khan',
       link: profileData.links.linkedin,
     },
+    ...(profileData.links.orcid
+      ? [{
+          icon: OrcidIcon,
+          label: 'ORCID',
+          value: '0009-0002-8075-8243',
+          link: profileData.links.orcid,
+        }]
+      : []),
+    ...(profileData.links.googleScholar
+      ? [{
+          icon: GoogleScholarIcon,
+          label: 'Google Scholar',
+          value: 'Musab Ahmed Khan',
+          link: profileData.links.googleScholar,
+        }]
+      : []),
   ];
 
   return (
@@ -143,38 +160,9 @@ export const Contact: React.FC = () => {
         </motion.section>
 
         {/* Contact CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
-          className="bg-gradient-to-r from-primary/10 to-blue-600/10 dark:from-blue-600/20 dark:to-blue-500/20 rounded-2xl p-8 text-center"
-        >
-          <h3 className="text-2xl font-bold text-text-light dark:text-text-dark mb-4">
-            Let's Connect
-          </h3>
-          <p className="text-muted-light dark:text-muted-dark mb-6 max-w-xl mx-auto">
+          <p className="text-lg text-muted-light dark:text-muted-dark max-w-2xl mx-auto text-center">
             Whether you have a project in mind, a question, or just want to say hi, I'd love to hear from you!
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              onClick={() => window.location.href = `mailto:${profileData.email}`}
-              className="shadow-md shadow-primary/10 dark:shadow-primary-dark/10"
-            >
-              <Mail className="w-5 h-5 mr-2" />
-              Send Email
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              onClick={() => window.open(profileData.links.linkedin, '_blank')}
-              className="shadow-sm"
-            >
-              <Linkedin className="w-5 h-5 mr-2" />
-              Connect on LinkedIn
-            </Button>
-          </div>
-        </motion.div>
       </div>
     </div>
   );

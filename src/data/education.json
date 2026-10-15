@@ -1,5 +1,14 @@
 [
   {
+    "id": "koc-university",
+    "institution": "Koç University",
+    "degree": "M.Sc. Artificial Intelligence",
+    "location": "Istanbul, Turkey",
+    "startDate": "Sep 2026",
+    "endDate": "Aug 2027",
+    "summary": "MSc in Artificial Intelligence - 100% Merit Scholarship (KU Presidential Fellowship)"
+  },
+  {
     "id": "sabanci-university",
     "institution": "Sabancı University",
     "degree": "B.Sc. Computer Science and Engineering",
@@ -11,7 +20,17 @@
     "honors": "High Honors",
     "scholarship": "100% Merit Scholarship (Sakip Sabanci)",
     "rank": "29th among 702 engineering students",
-    "summary": "BSc in Computer Science and Engineering - 100% Merit Scholarship",
+    "summary": "BSc in Computer Science and Engineering - 100% Merit Scholarship (Sakip Sabanci Incentive)",
+    "highlights": [
+      {
+        "label": "Published at SemEval 2026 (ACL)",
+        "url": "https://aclanthology.org/2026.semeval-1.74/"
+      },
+      {
+        "label": "Published at IEEE SIU 2026",
+        "url": "https://doi.org/10.1109/SIU71813.2026.11636837"
+      }
+    ],
     "coursework": [
       "Data Science",
       "Spatial Data Science",

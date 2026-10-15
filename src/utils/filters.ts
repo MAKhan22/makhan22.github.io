@@ -2,12 +2,32 @@ import { Project } from './types';
 
 export const filterProjects = (
   projects: Project[],
-  selectedTags: string[]
+  selectedTags: string[],
+  selectedYears: number[] = []
 ): Project[] => {
-  if (selectedTags.length === 0) return projects;
-  return projects.filter(project =>
-    project.tags.some(tag => selectedTags.includes(tag))
+  let filtered = projects;
+
+  if (selectedYears.length > 0) {
+    filtered = filtered.filter((project) => selectedYears.includes(project.year));
+  }
+
+  if (selectedTags.length > 0) {
+    filtered = filtered.filter((project) =>
+      project.tags.some((tag) => selectedTags.includes(tag))
+    );
+  }
+
+  return filtered;
+};
+
+export const getAllYears = (projects: Project[]): number[] => {
+  return Array.from(new Set(projects.map((project) => project.year))).sort(
+    (a, b) => b - a
   );
+};
+
+export const getYearCount = (projects: Project[], year: number): number => {
+  return projects.filter((project) => project.year === year).length;
 };
 
 export const getAllTags = (projects: Project[]): string[] => {

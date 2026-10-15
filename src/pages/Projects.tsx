@@ -2,33 +2,46 @@ import React, { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { ProjectCard } from '../components/ProjectCard';
 import { TagFilter } from '../components/TagFilter';
-import { filterProjects, getAllTags, getTagCount } from '../utils/filters';
+import { YearFilter } from '../components/YearFilter';
+import {
+  filterProjects,
+  getAllTags,
+  getAllYears,
+  getTagCount,
+  getYearCount,
+} from '../utils/filters';
 import projectsData from '../data/projects.json';
 import { Project } from '../utils/types';
 
 export const Projects: React.FC = () => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  const [selectedYears, setSelectedYears] = useState<number[]>([]);
   const projects = projectsData as Project[];
 
-  // Get all unique tags
-  const allTags = useMemo(() => getAllTags(projects), []);
+  const allTags = useMemo(() => getAllTags(projects), [projects]);
+  const allYears = useMemo(() => getAllYears(projects), [projects]);
 
-  // Get project count per tag
   const tagCounts = useMemo(() => {
     const counts: Record<string, number> = {};
-    allTags.forEach(tag => {
+    allTags.forEach((tag) => {
       counts[tag] = getTagCount(projects, tag);
     });
     return counts;
-  }, [allTags]);
+  }, [allTags, projects]);
 
-  // Filter projects based on selected tags
+  const yearCounts = useMemo(() => {
+    const counts: Record<number, number> = {};
+    allYears.forEach((year) => {
+      counts[year] = getYearCount(projects, year);
+    });
+    return counts;
+  }, [allYears, projects]);
+
   const filteredProjects = useMemo(
-    () => filterProjects(projects, selectedTags),
-    [selectedTags]
+    () => filterProjects(projects, selectedTags, selectedYears),
+    [projects, selectedTags, selectedYears]
   );
 
-  // Sort: featured first, then by year
   const sortedProjects = useMemo(
     () =>
       [...filteredProjects].sort((a, b) => {
@@ -41,14 +54,19 @@ export const Projects: React.FC = () => {
 
   const handleTagToggle = (tag: string) => {
     setSelectedTags((prev) =>
-      prev.includes(tag)
-        ? prev.filter((t) => t !== tag)
-        : [...prev, tag]
+      prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]
+    );
+  };
+
+  const handleYearToggle = (year: number) => {
+    setSelectedYears((prev) =>
+      prev.includes(year) ? prev.filter((y) => y !== year) : [...prev, year]
     );
   };
 
   const handleClearAll = () => {
     setSelectedTags([]);
+    setSelectedYears([]);
   };
 
   const container = {
@@ -61,10 +79,11 @@ export const Projects: React.FC = () => {
     },
   };
 
+  const hasActiveFilters = selectedTags.length > 0 || selectedYears.length > 0;
+
   return (
     <div className="min-h-screen py-12 px-4">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -78,16 +97,22 @@ export const Projects: React.FC = () => {
           </p>
         </motion.div>
 
-        {/* Tag Filter */}
+        <YearFilter
+          years={allYears}
+          selectedYears={selectedYears}
+          onYearToggle={handleYearToggle}
+          onClearYears={() => setSelectedYears([])}
+          projectCounts={yearCounts}
+        />
+
         <TagFilter
           tags={allTags}
           selectedTags={selectedTags}
           onTagToggle={handleTagToggle}
-          onClearAll={handleClearAll}
+          onClearAll={() => setSelectedTags([])}
           projectCounts={tagCounts}
         />
 
-        {/* Projects Grid */}
         {sortedProjects.length > 0 ? (
           <motion.div
             variants={container}
@@ -106,18 +131,19 @@ export const Projects: React.FC = () => {
             className="text-center py-20"
           >
             <p className="text-xl text-muted-light dark:text-muted-dark">
-              No projects found with the selected tags.
+              No projects found with the selected filters.
             </p>
-            <button
-              onClick={handleClearAll}
-              className="mt-4 text-primary dark:text-primary-dark hover:underline"
-            >
-              Clear filters
-            </button>
+            {hasActiveFilters && (
+              <button
+                onClick={handleClearAll}
+                className="mt-4 text-primary dark:text-primary-dark hover:underline"
+              >
+                Clear filters
+              </button>
+            )}
           </motion.div>
         )}
 
-        {/* Stats */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

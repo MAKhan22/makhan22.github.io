@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import { GoogleScholarIcon, OrcidIcon } from './icons/SocialIcons';
 import profileData from '../data/profile.json';
 
 export const Footer: React.FC = () => {
@@ -9,14 +10,19 @@ export const Footer: React.FC = () => {
     { icon: Github, url: profileData.links.github, label: 'GitHub' },
     { icon: Linkedin, url: profileData.links.linkedin, label: 'LinkedIn' },
     { icon: Mail, url: `mailto:${profileData.email}`, label: 'Email' },
+    ...(profileData.links.orcid
+      ? [{ icon: OrcidIcon, url: profileData.links.orcid, label: 'ORCID' }]
+      : []),
+    ...(profileData.links.googleScholar
+      ? [{ icon: GoogleScholarIcon, url: profileData.links.googleScholar, label: 'Google Scholar' }]
+      : []),
   ];
 
   return (
     <footer className="border-t border-zinc-200 dark:border-zinc-800 mt-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex flex-col items-center space-y-6">
-          {/* Social Links */}
-          <div className="flex space-x-6">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
             {socialLinks.map((link) => (
               <a
                 key={link.label}
@@ -31,7 +37,6 @@ export const Footer: React.FC = () => {
             ))}
           </div>
 
-          {/* Copyright */}
           <div className="text-center">
             <p className="text-sm text-muted-light dark:text-muted-dark">
               © {currentYear} {profileData.name}. All rights reserved.

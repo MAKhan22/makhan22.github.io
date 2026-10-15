@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight, GraduationCap, Award, TrendingUp, BookOpen, Code, Mail, ExternalLink, Github, Linkedin } from 'lucide-react';
+import { GoogleScholarIcon, OrcidIcon } from '../components/icons/SocialIcons';
 import { Button } from '../components/ui/button';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
@@ -171,6 +172,30 @@ export const Home: React.FC = () => {
             >
               <Mail className="w-6 h-6 text-text-light dark:text-text-dark" />
             </motion.button>
+
+            {profileData.links.orcid && (
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => window.open(profileData.links.orcid, '_blank')}
+                className="w-14 h-14 rounded-full bg-zinc-100 dark:bg-zinc-800 hover:bg-primary/10 dark:hover:bg-blue-500/10 border border-zinc-200 dark:border-zinc-700 hover:border-primary/50 dark:hover:border-blue-500/50 flex items-center justify-center transition-all shadow-md hover:shadow-lg"
+                aria-label="ORCID"
+              >
+                <OrcidIcon className="w-6 h-6 text-text-light dark:text-text-dark" />
+              </motion.button>
+            )}
+
+            {profileData.links.googleScholar && (
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => window.open(profileData.links.googleScholar, '_blank')}
+                className="w-14 h-14 rounded-full bg-zinc-100 dark:bg-zinc-800 hover:bg-primary/10 dark:hover:bg-blue-500/10 border border-zinc-200 dark:border-zinc-700 hover:border-primary/50 dark:hover:border-blue-500/50 flex items-center justify-center transition-all shadow-md hover:shadow-lg"
+                aria-label="Google Scholar"
+              >
+                <GoogleScholarIcon className="w-6 h-6 text-text-light dark:text-text-dark" />
+              </motion.button>
+            )}
             
             <motion.button
               whileHover={{ scale: 1.1 }}

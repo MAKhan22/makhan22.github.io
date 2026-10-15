@@ -2,10 +2,12 @@
   "name": "Musab Ahmed Khan",
   "title": "a Computer Science & Engineering Student",
   "bio": "Currently studying at Sabancı University as a CSE undergraduate student with High Honors (CGPA 3.89/4.0). Experienced in full-stack development, ML, AI, NLP, and Data Science. Transitioning into CS for healthcare, recent work includes reliable anatomy-aware segmentation pipeline with uncertainty flagging and xAI-based DeepMyelinAI CDSS for Multiple Sclerosis.",
-  "location": "Sabancı University, Tuzla, Istanbul, Turkey",
+  "location": "Istanbul, Turkey",
   "email": "musabahmedkhan22@gmail.com",
   "links": {
     "github": "https://github.com/MAKhan22",
-    "linkedin": "https://linkedin.com/in/musab-ahmed-khan"
+    "linkedin": "https://linkedin.com/in/musab-ahmed-khan",
+    "orcid": "https://orcid.org/0009-0002-8075-8243",
+    "googleScholar": "https://scholar.google.com/citations?user=Z1DWVP4AAAAJ"
   }
 }

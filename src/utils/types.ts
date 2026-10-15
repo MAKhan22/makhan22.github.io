@@ -7,6 +7,8 @@ export interface Profile {
   links: {
     github: string;
     linkedin: string;
+    orcid?: string;
+    googleScholar?: string;
     twitter?: string;
   };
 }
@@ -43,6 +45,8 @@ export interface Education {
   startDate: string;
   endDate: string;
   current?: boolean;
+  /** Shown next to dates, e.g. "est. 1 year" */
+  duration?: string;
   cgpa?: string;
   grade?: string;
   honors?: string;
@@ -51,6 +55,7 @@ export interface Education {
   /** One-line summary (e.g. BSc with scholarship); shown as first content line when set */
   summary?: string;
   description?: string;
+  highlights?: Array<{ label: string; url?: string }>;
   coursework?: string[];
   activities?: string[];
 }
@@ -71,9 +76,18 @@ export interface Publication {
   venue: string;
   year: number;
   type: 'conference' | 'journal' | 'preprint' | 'workshop';
-  status: 'published' | 'accepted' | 'preprint' | 'under-review';
+  status: 'published' | 'accepted' | 'preprint' | 'under-review' | 'camera-ready';
   link?: string;
+  doi?: string;
   abstract?: string;
+  citation?: {
+    style?: 'acl' | 'ieee';
+    authors?: string;
+    proceedings: string;
+    pages: string;
+    location: string;
+    publisher: string;
+  };
 }
 
 export type AwardType = 'academic' | 'research' | 'scholarship' | 'grant' | 'competition';

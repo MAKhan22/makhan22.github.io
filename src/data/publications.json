@@ -2,20 +2,36 @@
   {
     "title": "SU NLP 29 at SemEval-2026 Task 5: DynaOrd - Hybrid Dynamic Ordinal Regression with LoRA-Fine-Tuned DeBERTa-v3",
     "authors": ["Musab Ahmed Khan"],
-    "venue": "SemEval-2026",
+    "venue": "SemEval-2026 (co-located with ACL 2026)",
     "year": 2026,
     "type": "conference",
-    "status": "camera-ready",
-    "abstract": "Camera ready version at SemEval 2026 (co-located with ACL 2026)."
+    "status": "published",
+    "link": "https://aclanthology.org/2026.semeval-1.74/",
+    "doi": "10.18653/v1/2026.semeval-1.74",
+    "citation": {
+      "style": "acl",
+      "proceedings": "Proceedings of the 20th International Workshop on Semantic Evaluation (2026)",
+      "pages": "514–521",
+      "location": "San Diego, California, USA",
+      "publisher": "Association for Computational Linguistics"
+    }
   },
-
   {
     "title": "Anatomy-Aware Routing for Robust Medical Image Segmentation: A Failure-Detectable Alternative to Mixed Models",
     "authors": ["Musab Ahmed Khan", "Mohammed Sateh Salem"],
     "venue": "IEEE SIU 2026",
     "year": 2026,
     "type": "conference",
-    "status": "camera-ready",
-    "abstract": "Camera ready version at IEEE SIU 2026."
+    "status": "published",
+    "link": "https://doi.org/10.1109/SIU71813.2026.11636837",
+    "doi": "10.1109/SIU71813.2026.11636837",
+    "citation": {
+      "style": "ieee",
+      "authors": "M. A. Khan and M. S. Salem",
+      "proceedings": "2026 34th Signal Processing and Communications Applications Conference (SIU)",
+      "pages": "1-4",
+      "location": "İstanbul, Turkiye",
+      "publisher": "IEEE"
+    }
   }
 ]
