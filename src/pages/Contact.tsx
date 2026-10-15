@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Github, Linkedin } from 'lucide-react';
 import { GoogleScholarIcon, OrcidIcon } from '../components/icons/SocialIcons';
-import { Button } from '../components/ui/button';
+// import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import profileData from '../data/profile.json';
 
