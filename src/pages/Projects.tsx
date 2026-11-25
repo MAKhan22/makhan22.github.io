@@ -16,7 +16,7 @@ import { Project } from '../utils/types';
 export const Projects: React.FC = () => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [selectedYears, setSelectedYears] = useState<number[]>([]);
-  const projects = projectsData as Project[];
+  const projects = (projectsData as Project[]).filter((p) => !p.hidden);
 
   const allTags = useMemo(() => getAllTags(projects), [projects]);
   const allYears = useMemo(() => getAllYears(projects), [projects]);

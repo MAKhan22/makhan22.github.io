@@ -48,7 +48,8 @@ const PublicationCitation: React.FC<{ pub: Publication }> = ({ pub }) => {
     return (
       <p className="text-sm text-muted-light dark:text-muted-dark leading-relaxed mb-4">
         {authors}, <TitleLink quoted>{pub.title}</TitleLink>,{' '}
-        {pub.citation.proceedings}, {pub.citation.location}, {pub.year}, pp.{' '}
+        <em className="italic text-text-light dark:text-text-dark">{pub.citation.proceedings}</em>
+        , {pub.citation.location}, {pub.year}, pp.{' '}
         {pub.citation.pages}
         {doiUrl && (
           <>

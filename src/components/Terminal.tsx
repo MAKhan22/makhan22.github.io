@@ -535,7 +535,7 @@ const PasswordScreen: React.FC<PasswordScreenProps> = ({
               animate={{ opacity: 1 }}
               className="text-red-500 dark:text-red-400 text-sm mt-1"
             >
-              Your password is incorrect
+              Your password is <em className="italic">incorrect</em>
             </motion.p>
           )}
         </form>

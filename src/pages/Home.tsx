@@ -69,7 +69,8 @@ export const Home: React.FC = () => {
   };
 
   // Get featured projects, experiences (work/internship/teaching only), and education
-  const featuredProjects = projectsData.filter(p => p.featured).slice(0, 3);
+  const visibleProjects = projectsData.filter(p => !p.hidden);
+  const featuredProjects = visibleProjects.filter(p => p.featured).slice(0, 3);
   const experiences = (experienceData as Experience[]).filter(
     e => e.type === 'work' || e.type === 'internship' || e.type === 'teaching'
   );
@@ -181,7 +182,7 @@ export const Home: React.FC = () => {
                 className="w-14 h-14 rounded-full bg-zinc-100 dark:bg-zinc-800 hover:bg-primary/10 dark:hover:bg-blue-500/10 border border-zinc-200 dark:border-zinc-700 hover:border-primary/50 dark:hover:border-blue-500/50 flex items-center justify-center transition-all shadow-md hover:shadow-lg"
                 aria-label="ORCID"
               >
-                <OrcidIcon className="w-6 h-6 text-text-light dark:text-text-dark" />
+                <OrcidIcon variant="mono" className="w-6 h-6 text-text-light dark:text-text-dark" />
               </motion.button>
             )}
 
@@ -193,7 +194,7 @@ export const Home: React.FC = () => {
                 className="w-14 h-14 rounded-full bg-zinc-100 dark:bg-zinc-800 hover:bg-primary/10 dark:hover:bg-blue-500/10 border border-zinc-200 dark:border-zinc-700 hover:border-primary/50 dark:hover:border-blue-500/50 flex items-center justify-center transition-all shadow-md hover:shadow-lg"
                 aria-label="Google Scholar"
               >
-                <GoogleScholarIcon className="w-6 h-6 text-text-light dark:text-text-dark" />
+                <GoogleScholarIcon variant="mono" className="w-6 h-6 text-text-light dark:text-text-dark" />
               </motion.button>
             )}
             
@@ -263,7 +264,7 @@ export const Home: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <ScrollFadeItem>
               <motion.div variants={fadeInUp} className="text-center">
-                <div className="text-4xl font-bold text-primary dark:text-blue-500 mb-2">{projectsData.length > 0 ? `${projectsData.length - 1}+` : '0'}</div>
+                <div className="text-4xl font-bold text-primary dark:text-blue-500 mb-2">{visibleProjects.length > 0 ? `${visibleProjects.length}+` : '0'}</div>
                 <div className="text-sm text-muted-light dark:text-muted-dark">Projects</div>
               </motion.div>
             </ScrollFadeItem>

@@ -26,6 +26,8 @@ export interface Project {
     demo?: string;
   };
   featured: boolean;
+  /** If true, omitted from listings and homepage counts. */
+  hidden?: boolean;
 }
 
 export interface Experience {
@@ -90,7 +92,7 @@ export interface Publication {
   };
 }
 
-export type AwardType = 'academic' | 'research' | 'scholarship' | 'grant' | 'competition';
+export type AwardType = 'academic' | 'research' | 'fellowship' | 'scholarship' | 'grant' | 'competition';
 
 export interface Award {
   title: string;

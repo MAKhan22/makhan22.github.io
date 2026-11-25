@@ -26,9 +26,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       transition={{ duration: 0.2 }}
     >
       <Card className="h-full flex flex-col hover:shadow-lg hover:border-primary/50 dark:hover:border-primary-dark/50 group relative">
-        {/* Project Image */}
-        {project.image && (
-          <div className="relative overflow-hidden rounded-t-xl -m-6 mb-4 h-48 bg-zinc-100 dark:bg-zinc-800">
+        {/* Project Image - blank black placeholder until real images are added */}
+        <div className="relative overflow-hidden rounded-t-xl -m-6 mb-4 h-48 bg-black">
+          {project.image && (
             <motion.img
               src={project.image}
               alt={project.title}
@@ -36,23 +36,23 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
               onError={(e) => {
-                // Fallback to gradient if image fails to load
+                // Fallback to black blank if image fails to load
                 (e.target as HTMLImageElement).style.display = 'none';
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            
-            {/* Featured Badge */}
-            {project.featured && (
-              <div className="absolute top-3 right-3">
-                <Badge variant="default" className="flex items-center gap-1">
-                  <Star className="w-3 h-3 fill-current" />
-                  Featured
-                </Badge>
-              </div>
-            )}
-          </div>
-        )}
+          )}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+          {/* Featured Badge */}
+          {project.featured && (
+            <div className="absolute top-3 right-3">
+              <Badge variant="default" className="flex items-center gap-1">
+                <Star className="w-3 h-3 fill-current" />
+                Featured
+              </Badge>
+            </div>
+          )}
+        </div>
 
         <CardHeader className="relative pt-4">
           {/* Status Badge - Top right of writable area */}

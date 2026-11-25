@@ -1,5 +1,13 @@
 [
   {
+    "title": "Koç University Presidential Fellowship",
+    "issuer": "Koç University",
+    "year": 2026,
+    "types": ["scholarship", "fellowship", "academic"],
+    "amount": "Tuition Waiver (100% Merit) - 2026-2028, Monthly Stipend, Free Housing, Meal Allowance, Travel Grants among other benefits.",
+    "description": "Awarded for students with outstanding research and leadership potential."
+  },
+  {
     "title": "Sakıp Sabancı Incentive Scholarship",
     "issuer": "Sabancı University",
     "year": 2025,

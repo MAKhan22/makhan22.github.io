@@ -6,7 +6,13 @@
     "location": "Istanbul, Turkey",
     "startDate": "Sep 2026",
     "endDate": "Aug 2027",
-    "summary": "MSc in Artificial Intelligence - 100% Merit Scholarship (KU Presidential Fellowship)"
+    "summary": "MSc in Artificial Intelligence - 100% Merit Scholarship (KU Presidential Fellowship)",
+    "coursework": [
+      "Reinforcement Learning",
+      "Medical Image Analysis",
+      "Computational Structural Biology",
+      "Modern Learning Theory"
+    ]
   },
   {
     "id": "sabanci-university",

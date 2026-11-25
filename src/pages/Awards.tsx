@@ -31,6 +31,7 @@ export const Awards: React.FC = () => {
       case 'academic':
         return GraduationCap;
       case 'research':
+      case 'fellowship':
         return BookOpen;
       case 'competition':
         return Trophy;
@@ -47,6 +48,7 @@ export const Awards: React.FC = () => {
       case 'academic':
         return 'text-blue-600 dark:text-blue-400 bg-blue-600/10 dark:bg-blue-400/10';
       case 'research':
+      case 'fellowship':
         return 'text-purple-600 dark:text-purple-400 bg-purple-600/10 dark:bg-purple-400/10';
       case 'competition':
         return 'text-yellow-600 dark:text-yellow-400 bg-yellow-600/10 dark:bg-yellow-400/10';
@@ -63,6 +65,7 @@ export const Awards: React.FC = () => {
       case 'grant':
         return '!border-green-600/70 dark:!border-green-400/60';
       case 'research':
+      case 'fellowship':
         return '!border-purple-600/70 dark:!border-purple-400/60';
       case 'competition':
         return '!border-yellow-600/70 dark:!border-yellow-400/60';
@@ -215,9 +218,9 @@ export const Awards: React.FC = () => {
             </div>
             <div className="bg-white dark:bg-surface-dark border border-zinc-200 dark:border-zinc-800 rounded-xl p-4 text-center">
               <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-1">
-                {awards.filter((a) => getAwardTypes(a).includes('research')).length}
+                {awards.filter((a) => getAwardTypes(a).some((t) => t === 'research' || t === 'fellowship')).length}
               </div>
-              <div className="text-sm text-muted-light dark:text-muted-dark">Research</div>
+              <div className="text-sm text-muted-light dark:text-muted-dark">Research / Fellowship</div>
             </div>
             <div className="bg-white dark:bg-surface-dark border border-zinc-200 dark:border-zinc-800 rounded-xl p-4 text-center">
               <div className="text-3xl font-bold text-yellow-600 dark:text-yellow-400 mb-1">

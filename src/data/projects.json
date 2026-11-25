@@ -5,12 +5,12 @@
     "description": "Developing an Explainable-AI based Clinical Decision Support System (CDSS) for Teknofest 2026 for early diagnosis, disease subtype classification, progression prediction, and relapse prediction in Multiple Sclerosis (MS) using CSF biomarkers, clinical disability scores, genetic risk profiles, longitudinal symptom histories, and demographic data. Designing a multi-stage ML framework targeting the four clinical objectives, employing specialized model types at different stages while ensuring complete transparency for clinical use with xAI methods like SHAP, LIME, and attention visualization.",
     "status": "in-progress",
     "year": 2026,
-    "image": "https://via.placeholder.com/600x400?text=DeepMyelinAI+CDSS",
     "links": {
       "github": "",
       "demo": ""
     },
-    "featured": true,
+    "featured": false,
+    "hidden": true,
     "tags": [
       "Python",
       "Machine Learning",
@@ -29,7 +29,6 @@
     "description": "Built a terminal-based Turkish vocabulary recommender for learners using FAISS, multilingual bi-encoder retrieval, and a weighted feature reranker (semantic fit, corpus frequency, morphological overlap, MMR diversity, difficulty penalty), with optional cross-encoder and OpenRouter LLM tutor to suggest next words from a known-word learner profile. Best configuration (mpnet + mean embedding + weighted features) achieved a combined score of 0.671 (+12.3% over bi-encoder-only baseline).",
     "status": "completed",
     "year": 2026,
-    "image": "https://via.placeholder.com/600x400?text=Turkish+Vocabulary+Recommender",
     "links": {
       "github": "https://github.com/MAKhan22/symmetrical-broccoli",
       "demo": ""
@@ -54,7 +53,6 @@
     "description": "Developed an automated debugging pipeline that compares pass/fail UI test traces (actions, logs, screenshots) to rank steps most likely causing a regression and generate technical and plain-language root-cause reports. Combined heuristic (text, pixel diff, visual causal), LLM, and VLM scores in a unified fusion architecture, achieving 81% Hit@1 (+28% over heuristic baseline).",
     "status": "completed",
     "year": 2026,
-    "image": "https://via.placeholder.com/600x400?text=TraceLens",
     "links": {
       "github": "https://github.com/MAKhan22/TraceLens-Automated-Debugging",
       "demo": ""
@@ -81,7 +79,6 @@
     "description": "Implemented and compared brute-force and FPTAS solvers for the NP-complete Subset Sum problem, validating exponential vs polynomial runtime experimentally up to n = 300. Built a reproducible instance generator; all FPTAS outputs satisfied the (1 + ε) approximation guarantee with a max gap of 2 from optimal.",
     "status": "completed",
     "year": 2026,
-    "image": "https://via.placeholder.com/600x400?text=Subset+Sum",
     "links": {
       "github": "https://github.com/CS301-Algorithms/subset-sum-bruteforce-vs-heuristic",
       "demo": ""
@@ -102,7 +99,6 @@
     "description": "Developed medical image segmentation CV models for lung pneumothorax (SIIM-ACR) and brain MRI FLAIR (LGG segmentation), achieving Dice 0.84 and 0.91 respectively. Implemented a lightweight routing classifier to dispatch images to these models automatically with perfect accuracy. Extended pipeline to include modular post-training reliability flagging mechanism combining MC Dropout uncertainty, domain-shift detection and morphological plausibility checks and compared performance and robustness against heterogeneous mixed model approaches.",
     "status": "completed",
     "year": 2025,
-    "image": "https://via.placeholder.com/600x400?text=Medical+Image+Segmentation",
     "links": {
       "github": "https://github.com/orgs/CS415-MultiModal-Med-Image-Segmentation/repositories",
       "demo": ""
@@ -130,7 +126,6 @@
     "description": "Built a transformer-based NLP model for SemEval 2026 Task 5 to predict human plausibility ratings (1–5) for word senses in ambiguous narrative contexts. Achieved .73 combined score and ranked 14th on the SemEval leaderboard using fine-tuned DeBERTa and novel dynamicly weighted hybrid CORAL + MSE loss. Future plans include using LLMs to generate augmented datasets in Ambistory’s style to improve generalization.",
     "status": "completed",
     "year": 2025,
-    "image": "https://via.placeholder.com/600x400?text=SemEval+2026",
     "links": {
       "github": "https://github.com/NLP-445-SemEval/SU-NLP-29",
       "demo": ""
@@ -156,7 +151,6 @@
     "description": "Developed an AI-powered end-to-end framework to automate Systematic Mapping Studies (SMS) using LLMs and Model Context Protocol (MCP) framework. Automates months-long SMS process of research paper retrieval, screening with snowballing, topic extraction and classification, and knowledge graph construction.",
     "status": "completed",
     "year": 2025,
-    "image": "https://via.placeholder.com/600x400?text=AI+Research+Gap+Finder",
     "links": {
       "github": "",
       "demo": ""
@@ -180,7 +174,6 @@
     "description": "Built a modern, professional portfolio website featuring dark mode, responsive design, and smooth animations. JSON-driven content architecture for easy maintenance, deployed on GitHub Pages with automated CI/CD pipeline.",
     "status": "completed",
     "year": 2026,
-    "image": "https://via.placeholder.com/600x400?text=Portfolio+Website",
     "links": {
       "github": "https://github.com/MAKhan22/ma-khan.github.io",
       "demo": "https://makhan22.github.io"
@@ -203,7 +196,6 @@
     "description": "Analyzed 16,225 ACLED political violence and protest events (1997–2024) using spatial geometry and OpenStreetMap data. Demonstrated accessibility gradient in political disorder with riots concentrated near major roads and battles in remote regions.",
     "status": "completed",
     "year": 2025,
-    "image": "https://via.placeholder.com/600x400?text=Kenya+Political+Analysis",
     "links": {
       "github": "https://github.com/Spatial-Data-Science-494/Kenya-Political-Violence-2022",
       "demo": ""
@@ -224,7 +216,6 @@
     "description": "Analyzed 1.9M GitHub users and 3.9M follower relationships using GPU-accelerated cuGraph and NetworkX. Investigated whether programming language diversity correlates with social network centrality using PageRank, betweenness, and community detection metrics.",
     "status": "completed",
     "year": 2025,
-    "image": "https://via.placeholder.com/600x400?text=GitHub+Network+Analysis",
     "links": {
       "github": "https://github.com/GraphVader/fictional-octo-waddle",
       "demo": ""
@@ -248,7 +239,6 @@
     "description": "Created a CV-management tool that enables quick creation of professional, tailored, ATS-friendly CVs with AI assistance if needed.",
     "status": "completed",
     "year": 2025,
-    "image": "https://via.placeholder.com/600x400?text=WitchCraft+CV+Tool",
     "links": {
       "github": "https://github.com/ProjLab42/WitchCraft",
       "demo": ""
@@ -277,7 +267,6 @@
     "description": "Developed a Java messaging app using Gradle, Spring Boot and MongoDB for backend and React Native, Android Studio, Expo CLI for frontend.",
     "status": "completed",
     "year": 2024,
-    "image": "https://via.placeholder.com/600x400?text=HowUDoin+Messaging",
     "links": {
       "github": "https://github.com/MAKhan22/CS310_Howudoin",
       "demo": ""
@@ -302,7 +291,6 @@
     "description": "Created a model to predict Nvidia (NVDA) stock prices using trends from correlated stocks Microsoft (MSFT) and Broadcom (AVGO). Analyzed US stock market data (2019–2024) for market insights.",
     "status": "completed",
     "year": 2024,
-    "image": "https://via.placeholder.com/600x400?text=Stock+Prediction",
     "links": {
       "github": "",
       "demo": ""
@@ -325,7 +313,6 @@
     "description": "Built an image classification CV model in my first year of CS to predict ethnicity from photographs using a dataset of individuals from the GCC, Egypt, and Levant regions.",
     "status": "completed",
     "year": 2023,
-    "image": "https://via.placeholder.com/600x400?text=Ethnicity+Classification",
     "links": {
       "github": "",
       "demo": ""
@@ -347,7 +334,6 @@
     "description": "Developed a distributed environmental monitoring simulation with networked sensors, intermediary drones, and a central server, implementing TCP-based communication, real-time statistical analysis and anomaly detection, battery lifecycle simulation with automatic recovery, and optional GUI-based system monitoring.",
     "status": "completed",
     "year": 2024,
-    "image": "https://via.placeholder.com/600x400?text=Drone+Network+Simulation",
     "links": {
       "github": "https://github.com/404NetFound/effective-goggles",
       "demo": ""
@@ -370,7 +356,6 @@
     "description": "Developed a comprehensive sentiment analysis pipeline for the IMDB movie review dataset (50K samples), implementing and evaluating Logistic Regression, BiLSTM with GloVe embeddings and attention, and fine-tuned BERT models, achieving up to 91.5% accuracy and 0.971 AUC, with systematic cross-validation and detailed performance–efficiency trade-off analysis.",
     "status": "completed",
     "year": 2024,
-    "image": "https://via.placeholder.com/600x400?text=IMDB+Sentiment+Analysis",
     "links": {
       "github": "https://github.com/abahmad02/CS412-Project",
       "demo": ""
@@ -395,7 +380,6 @@
     "description": "Developed a full-stack e-commerce web application for men's luxury bags using MySQL, Node.js, Express.js, and React, following a client–server architecture and Scrum Agile methodology.",
     "status": "completed",
     "year": 2024,
-    "image": "https://via.placeholder.com/600x400?text=ZAD+A+DOS+Ecommerce",
     "links": {
       "github": "https://github.com/orgs/pishmish/repositories",
       "demo": ""
@@ -420,7 +404,6 @@
     "description": "Implemented CRUD-based web applications integrating MySQL and Firebase, including the design of a relational database for a computer parts shop with ER modeling, SQL schema implementation, triggers and stored procedures, a web-based database interface, and a real-time customer support portal.",
     "status": "completed",
     "year": 2023,
-    "image": "https://via.placeholder.com/600x400?text=Database+System",
     "links": {
       "github": "",
       "demo": ""
@@ -442,7 +425,6 @@
     "description": "Designed and implemented a two-player electronic air-hockey game on an FPGA using Verilog, modeling puck motion and game logic via finite state machines, with real-time interaction through LEDs, seven-segment displays, buttons, and switches; implemented timing control, debouncing, score tracking, win conditions, and demonstrated the complete system on hardware.",
     "status": "completed",
     "year": 2023,
-    "image": "https://via.placeholder.com/600x400?text=FPGA+Air+Hockey",
     "links": {
       "github": "https://github.com/FPGA-Air-Hockey/CS303_Electronic_Air_Hockey_Machine",
       "demo": ""
