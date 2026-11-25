@@ -4,7 +4,7 @@
     "issuer": "Koç University",
     "year": 2026,
     "types": ["scholarship", "fellowship", "academic"],
-    "amount": "Tuition Waiver (100% Merit) - 2026-2028, Monthly Stipend, Free Housing, Meal Allowance, Travel Grants among other benefits.",
+    "amount": "Tuition Waiver, Stipend, Housing, Meal, Travel Grants among other benefits.",
     "description": "Awarded for students with outstanding research and leadership potential."
   },
   {
@@ -52,7 +52,7 @@
     "issuer": "Sabancı University",
     "year": 2026,
     "types": ["academic"],
-    "amount": "Fall 2026",
+    "amount": "Spring 2026",
     "description": "Awarded for achieving top academic standing at Sabancı University."
   },
   {
